@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import cepDataContext from "./contexts/cepDataContext";
+import isLoadingContext from "./contexts/isLoadingContext"
+
+import Layout from "./pages/Layout"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [cepData, setCepData] = useState({});
+  const [isLoading, setIsLoading] = useState(false)
+
+  return ( 
+    <cepDataContext.Provider value={{cepData, setCepData}}>
+      <isLoadingContext.Provider value={{isLoading, setIsLoading}} >
+        <Layout />
+      </isLoadingContext.Provider>
+    </cepDataContext.Provider> 
   );
 }
 
