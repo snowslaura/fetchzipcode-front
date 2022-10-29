@@ -45,3 +45,10 @@ export const Title = styled.div`
     justify-content: center;
 `
 
+export const StatusMessage = styled.p`
+    font-size: 2em;
+    margin: 50px;
+    color: #FFD730;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+`
+

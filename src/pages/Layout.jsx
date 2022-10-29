@@ -1,6 +1,7 @@
 
 import Input from "../components/Input/Input";
 import CepData from "../components/CepData/CepData";
+import Map from "../components/Map/Map";
 import { 
     Container,
     Title
@@ -13,6 +14,7 @@ function Layout(){
             <Title>Busque CEP</Title>
             <Input/> 
             <CepData />
+            <Map />
         </Container>
     </>
     )

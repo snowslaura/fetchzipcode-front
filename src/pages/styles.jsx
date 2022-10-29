@@ -7,7 +7,6 @@ export const Container = styled.div`
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    margin-top:50px;
 `
 
 export const Title = styled.p`

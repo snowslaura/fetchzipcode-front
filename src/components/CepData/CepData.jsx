@@ -7,13 +7,14 @@ import{
     DataContainer,
     Data,
     Content,
-    Title
+    Title,
+    StatusMessage
 } from './style'
 
 
 function CepData(){
     const { cepData } = useContext(cepDataContext)   
-    const {isLoading, setIsLoading} = useContext(isLoadingContext) 
+    const {isLoading} = useContext(isLoadingContext) 
 
     return(
         <Container>
@@ -42,9 +43,10 @@ function CepData(){
                 </Data>
             </DataContainer>
             :null}
-            {}          
+            {(cepData.status === 404 || cepData.status === 400 || cepData.status === 500)  && !isLoading?<StatusMessage>{cepData.message} :( </StatusMessage>:null}
+    
         </Container>
-    );
+    );  
 };
 
 export default CepData
