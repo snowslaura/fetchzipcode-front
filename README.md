@@ -1,8 +1,9 @@
-<h1>This is Fetch CEP!  /  Este é BUsca Cep!</h1>
+<h1>This is Fetch CEP!  /  Este é Busca Cep!</h1>
 
-Check it out on : https://projeto10-trackit-tawny.vercel.app/
+Check it out on :  https://fetchzipcode-front-u5lq.vercel.app/
 
-![trackit](https://user-images.githubusercontent.com/92411912/177019895-fb7634c2-f4ab-404b-817f-cfbc69060301.gif)
+![Peek 2022-10-30 23-02](https://user-images.githubusercontent.com/92411912/198916690-ae6378ba-e9c9-40ca-a37f-a4a79d564f24.gif)
+
 
 <h3>English</h3>
 <b>This is a zip code tracker application.</b></br>
