@@ -17,7 +17,7 @@ function Input(){
     const [cep, setCep] = useState("");   
     
     const { setCepData } = useContext(cepDataContext)
-    const {isLoading, setIsLoading} = useContext(isLoadingContext)
+    const { isLoading, setIsLoading } = useContext(isLoadingContext)
 
     function maskCep(value){
         return (value

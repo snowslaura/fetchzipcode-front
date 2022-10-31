@@ -14,7 +14,7 @@ import{
 
 function CepData(){
     const { cepData } = useContext(cepDataContext)   
-    const {isLoading} = useContext(isLoadingContext) 
+    const { isLoading } = useContext(isLoadingContext) 
 
     return(
         <Container>

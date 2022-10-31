@@ -19,7 +19,7 @@ export default function Map(){
     
         <div style={{ height: '400px', width: '90%', marginBottom:'50px' }}>
         <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyC8H08TnsIQSyqv1lnrcV21WqymkF7pmyc' }}
+            bootstrapURLKeys={{ key: process.env.GOOGLE_API_KEY }}
             defaultCenter={{lat: cepData.lat, lng: cepData.long}}
             defaultZoom={defaultProps.zoom}
             center={{lat: cepData.lat, lng: cepData.long}}
